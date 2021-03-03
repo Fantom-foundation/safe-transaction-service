@@ -33,9 +33,11 @@ class EtherscanApi:
 
     def get_base_url(self, network: EthereumNetwork):
         if network == EthereumNetwork.MAINNET:
-            return 'https://api.etherscan.io'
+            return 'https://api.ftmscan.com'
+            # return 'https://api.etherscan.io'
         elif network == EthereumNetwork.RINKEBY:
-            return 'https://api-rinkeby.etherscan.io'
+            return 'https://xapi.testnet.fantom.network/api'
+            # return 'https://api-rinkeby.etherscan.io'
         elif network == EthereumNetwork.XDAI:
             return 'https://blockscout.com/poa/xdai'
         elif network == EthereumNetwork.ENERGY_WEB_CHAIN:

@@ -36,8 +36,10 @@ class EtherscanToken:
 
 
 class EtherscanClient:
-    address_url: ClassVar[str] = 'https://etherscan.io/address'
-    tokens_url: ClassVar[str] = 'https://etherscan.io/tokens'
+    address_url: ClassVar[str] = 'https://ftmscan.com/address'
+    tokens_url: ClassVar[str] = 'https://ftmscan.com/tokens'
+    # address_url: ClassVar[str] = 'https://etherscan.io/address'
+    # tokens_url: ClassVar[str] = 'https://etherscan.io/tokens'
 
     @cached_property
     def scraper(self):
